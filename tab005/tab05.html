@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ot-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercício de Tabelas</title>
+
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      table {
+        width: 500px;
+        border-collapse: collapse;
+      }
+
+      caption {
+        font-size: 1.3em;
+        font-weight: bolder;
+        padding: 8px;
+      }
+
+      th,
+      td {
+        border: 1px solid black;
+        padding: 8px;
+      }
+
+      col.cnome,
+      col.cprof {
+        background-color: aqua;
+      }
+
+      col.cgrupo {
+        background-color: yellow;
+      }
+    </style>
+  </head>
+  <body>
+    <!--Agrupano coluna com (colgroup) = coluna zebrada e usamos o (span) = pula para a proxima coluna. Usamos colgroup no html5 na construção da tebela para facilitar as configurações no CSS. Usamos CLASS e até mesmo o ID para configurações no CSS.  -->
+    <table>
+      <colgroup>
+        <col class="cnome" />
+        <col class="cgrupo" span="2" />
+        <col class="cprof" />
+      </colgroup>
+      <caption>
+        Cadastro
+      </caption>
+      <tr>
+        <th scope="col">Nome</th>
+        <th scope="col">Sexo</th>
+        <th scope="col">Idade</th>
+        <th scope="col">Profissão</th>
+      </tr>
+
+      <tr>
+        <td>Ana Maria</td>
+        <td>F</td>
+        <td>18</td>
+        <td>Jornalista</td>
+      </tr>
+
+      <tr>
+        <td>Paulo Cesar</td>
+        <td>M</td>
+        <td>35</td>
+        <td>Gerente</td>
+      </tr>
+
+      <tr>
+        <td>Suzana Capitani</td>
+        <td>F</td>
+        <td>42</td>
+        <td>Secretaria</td>
+      </tr>
+
+      <tr>
+        <td>Victor Oliveira</td>
+        <td>M</td>
+        <td>21</td>
+        <td>Vendedor</td>
+      </tr>
+
+      <tr>
+        <td>Milena Capitani</td>
+        <td>F</td>
+        <td>18</td>
+        <td>Estudante</td>
+      </tr>
+
+      <tr>
+        <td>Leia de Oliveira</td>
+        <td>F</td>
+        <td>62</td>
+        <td>Cuidadora</td>
+      </tr>
+
+      <tr>
+        <td>Robson Flamino</td>
+        <td>M</td>
+        <td>55</td>
+        <td>Mecânico</td>
+      </tr>
+    </table>
+  </body>
+</html>

@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+
+      caption{
+        font-size: 1.5em;
+        font-weight: bold;
+        padding: 10px;
+        background-color: lightslategray;
+      }
+
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      table {
+        width: 500px;
+        border-collapse: collapse;
+
+        position: relative;/*Padrão para paralisar o cabeçãlho da tabela na barra de rolagem */
+      }
+
+      td,
+      th {
+        border: 1px solid black;
+        padding: 10px;
+      }
+
+      thead,
+      tfoot {
+        background: gray;
+        color: white;
+      }
+      
+      /*Padrão para paralisar o cabeçãlho da tabela na barra 
+      de rolagem */
+      thead > tr> th{
+        position: sticky;
+        top: -1px;
+        background-color: gray;
+      }
+
+      td.numero{
+        text-align:right;
+      }
+
+      tbody > tr:nth-child(2n){
+        background-color: lightslategray;
+      }
+
+    </style>
+    <title>Tabelas</title>
+  </head>
+  <body>
+    <h1>Uso de tabelas grandes</h1>
+    <!--Anatomia para tabelas grandes
+        TABLE
+          CAPTION = É A LEGENDA TA TABELA 
+          THEAD = CABEÇA
+            TR, TD, TH
+          TBODY = CORPO
+            TR, TD, TH
+          TfOOT = RODA PÉ DA TABELA
+            TR, TD, TH
+          -->
+    <table>
+
+      <caption>População das Unidades Federativas</caption>
+      <thead>
+        <tr>
+          <th scope="col">Estado</th>
+          <th scope="col" style="width: 50px;">População</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td>São Paulo</td>
+          <td class="numero">45.919,049</td>
+        </tr>
+
+        <tr>
+          <td>Minas Gerais</td>
+          <td class="numero">21.178,691</td>
+        </tr>
+
+        <tr>
+          <td>Rio de Janeiro</td>
+          <td class="numero">17.694,691</td>
+        </tr>
+
+        <tr>
+          <td>Bahia</td>
+          <td class="numero">45.919,049</td>
+        </tr>
+
+        <tr>
+          <td>Paraná</td>
+          <td class="numero">21.178,691</td>
+        </tr>
+
+        <tr>
+          <td>Riogrande do Sul</td>
+          <td class="numero">17.694,691</td>
+        </tr>
+
+        <tr>
+          <td>Pernambuco</td>
+          <td class="numero">45.919,049</td>
+        </tr>
+
+        <tr>
+          <td>Ceara</td>
+          <td class="numero">21.178,691</td>
+        </tr>
+
+        <tr>
+          <td>Pará</td>
+          <td class="numero">17.694,691</td>
+        </tr>
+
+        <tr>
+          <td>Santa Catarina</td>
+          <td class="numero">45.919,049</td>
+        </tr>
+
+        <tr>
+          <td>Maranhão</td>
+          <td class="numero">21.178,691</td>
+        </tr>
+
+        <tr>
+          <td>Goiás</td>
+          <td class="numero">17.694,691</td>
+        </tr>
+
+        <td>Amazonas</td>
+        <td class="numero">45.919,049</td>
+      </tr>
+
+      <tr>
+        <td>Espírito Santo</td>
+        <td class="numero">21.178,691</td>
+      </tr>
+
+      <tr>
+        <td>Paraíba</td>
+        <td class="numero">17.694,691</td>
+      </tr>
+
+      <tr>
+        <td>Rio Grande do Norte</td>
+        <td class="numero">45.919,049</td>
+      </tr>
+
+      <tr>
+        <td>Mato Grosso</td>
+        <td class="numero">21.178,691</td>
+      </tr>
+
+      <tr>
+        <td>Alagoas</td>
+        <td class="numero">17.694,691</td>
+      </tr>
+
+      <tr>
+        <td>Piauí</td>
+        <td class="numero">45.919,049</td>
+      </tr>
+
+      <tr>
+        <td>Distrito Federal</td>
+        <td class="numero">21.178,691</td>
+      </tr>
+
+      <tr>
+        <td>Mato Grosso do Sul</td>
+        <td class="numero">17.694,691</td>
+      </tr>
+
+      <tr>
+        <td>Sergipe</td>
+        <td class="numero">45.919,049</td>
+      </tr>
+
+      <tr>
+        <td>Rondonia</td>
+        <td class="numero">21.178,691</td>
+      </tr>
+
+      <tr>
+        <td>Tocantins</td>
+        <td class="numero">17.694,691</td>
+      </tr>
+
+      <tr>
+        <td>Acre</td>
+        <td class="numero">13.546,008</td>
+      </tr>
+
+      <tr>
+        <td>Amapá</td>
+        <td class="numero">9.879,010</td>
+      </tr>
+
+      <tr>
+        <td>Roraima</td>
+        <td class="numero">5.056,100</td>
+      </tr>
+      </tbody>
+
+      <tfoot>
+        <th scope="row">Total de Habitantes</th>
+        <td class="numero"><strong>210.147,125</strong></td>
+      </tfoot>
+    </table>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae velit excepturi veritatis ea inventore est. Asperiores necessitatibus cum, esse veniam tenetur repellat eveniet consequuntur et ea voluptas eius amet ab?</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae velit excepturi veritatis ea inventore est. Asperiores necessitatibus cum, esse veniam tenetur repellat eveniet consequuntur et ea voluptas eius amet ab?</p> <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae velit excepturi veritatis ea inventore est. Asperiores necessitatibus cum, esse veniam tenetur repellat eveniet consequuntur et ea voluptas eius amet ab?</p> <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae velit excepturi veritatis ea inventore est. Asperiores necessitatibus cum, esse veniam tenetur repellat eveniet consequuntur et ea voluptas eius amet ab?</p> <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae velit excepturi veritatis ea inventore est. Asperiores necessitatibus cum, esse veniam tenetur repellat eveniet consequuntur et ea voluptas eius amet ab?</p> <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae velit excepturi veritatis ea inventore est. Asperiores necessitatibus cum, esse veniam tenetur repellat eveniet consequuntur et ea voluptas eius amet ab?</p> <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae velit excepturi veritatis ea inventore est. Asperiores necessitatibus cum, esse veniam tenetur repellat eveniet consequuntur et ea voluptas eius amet ab?</p> <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae velit excepturi veritatis ea inventore est. Asperiores necessitatibus cum, esse veniam tenetur repellat eveniet consequuntur et ea voluptas eius amet ab?</p> <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae velit excepturi veritatis ea inventore est. Asperiores necessitatibus cum, esse veniam tenetur repellat eveniet consequuntur et ea voluptas eius amet ab?</p> <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae velit excepturi veritatis ea inventore est. Asperiores necessitatibus cum, esse veniam tenetur repellat eveniet consequuntur et ea voluptas eius amet ab?</p> <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae velit excepturi veritatis ea inventore est. Asperiores necessitatibus cum, esse veniam tenetur repellat eveniet consequuntur et ea voluptas eius amet ab?</p> <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae velit excepturi veritatis ea inventore est. Asperiores necessitatibus cum, esse veniam tenetur repellat eveniet consequuntur et ea voluptas eius amet ab?</p> <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae velit excepturi veritatis ea inventore est. Asperiores necessitatibus cum, esse veniam tenetur repellat eveniet consequuntur et ea voluptas eius amet ab?</p> <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae velit excepturi veritatis ea inventore est. Asperiores necessitatibus cum, esse veniam tenetur repellat eveniet consequuntur et ea voluptas eius amet ab?</p> <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae velit excepturi veritatis ea inventore est. Asperiores necessitatibus cum, esse veniam tenetur repellat eveniet consequuntur et ea voluptas eius amet ab?</p>
+  </body>
+</html>

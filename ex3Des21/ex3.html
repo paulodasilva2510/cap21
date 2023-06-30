@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Desafio 3 de tabelas</title>
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      table {
+        border-collapse: collapse;
+        width: 500px;
+      }
+
+      th,
+      td {
+        border: 1px solid black;
+        padding: 20px;
+      }
+
+      .numero {
+        border-color: gray;
+        text-align: left;
+        color: white;
+        background-color: gray;
+      }
+
+      .cor {
+        background-color: gray;
+        border: 1px solid black;
+        color: white;
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <tr class="cor">
+        <th>Área</th>
+        <th>Disciplina</th>
+        <th colspan="2">
+          Notas
+          <p>Nota 1 Nota 2</p>
+        </th>
+        <th colspan="2">Média</th>
+      </tr>
+
+      <tr>
+        <th rowspan="4">Exatas</th>
+        <td>Matemática</td>
+        <td>0.0</td>
+        <td>0.0</td>
+        <td>0.0</td>
+      </tr>
+
+      <tr>
+        <td>Fisica</td>
+        <td>0.0</td>
+        <td>0.0</td>
+        <td>0.0</td>
+      </tr>
+
+      <tr>
+        <td>Quimica</td>
+        <td>0.0</td>
+        <td>0.0</td>
+        <td>0.0</td>
+      </tr>
+
+      <tr>
+        <td>Bilologia</td>
+        <td>0.0</td>
+        <td>0.0</td>
+        <td>0.0</td>
+      </tr>
+
+      <tr class="numero">
+        <th colspan="4">Média de Exatas</th>
+        <td>0.0</td>
+      </tr>
+
+      <tr>
+        <th rowspan="2">Humanas</th>
+        <td>História</td>
+        <td>0.0</td>
+        <td>0.0</td>
+        <td>0.0</td>
+      </tr>
+
+      <tr>
+        <td>Geograia</td>
+        <td>0.0</td>
+        <td>0.0</td>
+        <td>0.0</td>
+      </tr>
+
+      <tr class="numero">
+        <th colspan="4">Média de Humanas</th>
+        <td>0.0</td>
+      </tr>
+    </table>
+  </body>
+</html>
